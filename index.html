@@ -14,7 +14,6 @@
 
     <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
         
-        <!-- Dashboard Header -->
         <div class="bg-slate-800 p-6 text-white">
             <h1 class="text-2xl font-bold mb-4">হিসাব বিবরণী</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -33,9 +32,7 @@
             </div>
         </div>
 
-        <!-- Controls & Tabs -->
         <div class="p-4 border-b bg-gray-50 flex flex-col lg:flex-row gap-4 justify-between items-center sticky top-0 z-10">
-            <!-- Tabs -->
             <div class="flex gap-2 w-full lg:w-auto">
                 <button onclick="setTab('income')" id="tabIncome" class="flex-1 lg:flex-none px-6 py-2 rounded-full font-semibold transition bg-green-600 text-white shadow-md">
                     জমা
@@ -45,7 +42,6 @@
                 </button>
             </div>
 
-            <!-- Search -->
             <div class="relative w-full lg:w-64">
                 <input type="text" id="searchInput" placeholder="খুঁজুন..." 
                        class="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -54,7 +50,6 @@
                 </svg>
             </div>
             
-            <!-- Downloads -->
             <div class="flex flex-col sm:flex-row gap-2 w-full lg:w-auto">
                 <button onclick="downloadIncomeCSV()" class="flex-1 flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg transition text-sm font-medium">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +66,6 @@
             </div>
         </div>
 
-        <!-- Table -->
         <div class="overflow-x-auto min-h-[400px]">
             <table class="w-full text-left border-collapse">
                 <thead>
@@ -83,17 +77,15 @@
                     </tr>
                 </thead>
                 <tbody class="text-gray-700 text-sm font-medium" id="tableBody">
-                    <!-- Rows will be populated by JS -->
-                </tbody>
+                    </tbody>
             </table>
         </div>
         
-        <!-- Empty State -->
         <div id="emptyState" class="hidden p-12 text-center text-gray-500">
             <svg class="w-12 h-12 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
-            <p>কোন তথ্য পাওয়া যায়নি</p>
+            <p>কোন তথ্য পাওয়া যায়নি</p>
         </div>
 
     </div>
@@ -114,13 +106,13 @@
         { date: "26/12/2025", name: "তুষার দালাল", amount: 2000, note: "" },
         { date: "28/12/2025", name: "সেলিম শিকদার", amount: 500, note: "" },
         { date: "28/12/2025", name: "হাফেজ এর মা", amount: 100, note: "" },
-        { date: "28/12/2025", name: "চান মিয়া", amount: 50, note: "" },
+        { date: "28/12/2025", name: "চান মিয়া", amount: 50, note: "" },
         { date: "28/12/2025", name: "মামুন শেখ", amount: 500, note: "" },
         { date: "28/12/2025", name: "সালাউদ্দিন দেওয়ান", amount: 500, note: "" },
         { date: "28/12/2025", name: "নূরু দালাল", amount: 500, note: "" },
         { date: "28/12/2025", name: "সবুজ দেওয়ান", amount: 100, note: "" },
         { date: "28/12/2025", name: "জসমি দালাল মারফত", amount: 14400, note: "" },
-        { date: "28/12/2025", name: "আনোয়ার শিকদার", amount: 2000, note: "" },
+        { date: "28/12/2025", name: "আনোয়ার শিকদার", amount: 2000, note: "" },
         { date: "29/12/2025", name: "ছাব্বির দালাল", amount: 1000, note: "" },
         { date: "29/12/2025", name: "নাদিম বেপারী", amount: 5000, note: "৩০০০+২০০০" },
         { date: "29/12/2025", name: "সাজন শেখ", amount: 4000, note: "" },
@@ -139,7 +131,7 @@
         { date: "31/12/2025", name: "ফারুক দালাল", amount: 1000, note: "" },
         { date: "31/12/2025", name: "তানজিন+তাহমিনা আপু", amount: 2000, note: "" },
         { date: "31/12/2025", name: "মারুফ থ্র", amount: 1800, note: "" },
-        { date: "31/12/2025", name: "চানমিয়া শেখ", amount: 2000, note: "" },
+        { date: "31/12/2025", name: "চানমিয়া শেখ", amount: 2000, note: "" },
         { date: "31/12/2025", name: "সেলিম ঢালি", amount: 500, note: "" },
         { date: "31/12/2025", name: "মিন্টু দালাল", amount: 500, note: "" },
         { date: "31/12/2025", name: "মজনু দালাল", amount: 1000, note: "" },
@@ -152,13 +144,13 @@
         { date: "31/12/2025", name: "তালেবালী শেখ", amount: 5000, note: "" },
         { date: "31/12/2025", name: "হোসেন মারফত", amount: 3700, note: "" },
         { date: "31/12/2025", name: "ইমরান (মুনের দুলাভাই)", amount: 1000, note: "" },
-        { date: "31/12/2025", name: "সোনা মিয়া দালাল", amount: 5000, note: "" },
+        { date: "31/12/2025", name: "সোনা মিয়া দালাল", amount: 5000, note: "" },
         { date: "31/12/2025", name: "সুমন বেপারী", amount: 500, note: "" },
         { date: "31/12/2025", name: "নজরুল দালাল", amount: 1000, note: "" },
         { date: "31/12/2025", name: "কামরুল দালাল", amount: 5000, note: "" },
         { date: "31/12/2025", name: "অজ্ঞাত (মিঠু মারফত)", amount: 3500, note: "" },
         { date: "31/12/2025", name: "কামাল দালাল", amount: 500, note: "" },
-        { date: "31/12/2025", name: "উত্তর বাড়ি (মোশারফ কাকা)", amount: 16450, note: "" },
+        { date: "31/12/2025", name: "উত্তর বাড়ি (মোশারফ কাকা)", amount: 16450, note: "" },
         { date: "31/12/2025", name: "সেলিম জমাদ্দার", amount: 2000, note: "" },
         { date: "31/12/2025", name: "ওয়াসিম দালাল", amount: 1000, note: "" },
         { date: "31/12/2025", name: "সালাম বেপারী", amount: 3200, note: "" },
@@ -188,7 +180,7 @@
         { date: "31/12/2025", name: "বর্ষা আপা", amount: 500, note: "" },
         { date: "31/12/2025", name: "নিরব", amount: 500, note: "" },
         { date: "31/12/2025", name: "কাকা", amount: 2000, note: "" },
-        { date: "31/12/2025", name: "গত বছর জমা", amount: 30779, note: "" }
+        { date: "31/12/2025", name: "গত বছর জমা", amount: 30779, note: "" },
     ];
 
     // Expense Data (Khoroch)
@@ -224,12 +216,12 @@
         { date: "02/01/2026", name: "বাত্তি", amount: 6000, note: "" },
         { date: "02/01/2026", name: "বাবুর্চি+ ঘী", amount: 14200, note: "১০০০+৬০০০+ ৭২০০ (মাওয়া)" },
         { date: "02/01/2026", name: "মাছ", amount: 2600, note: "" },
-        { date: "02/01/2026", name: "হুজুর গিফট", amount: 7000, note: "" }
+        { date: "02/01/2026", name: "হুজুর গিফট", amount: 7000, note: "" },
         { date: "02/01/2026", name: "ইন্টারনেট + সুতা ", amount: 220, note: "" },
         { date: "02/01/2026", name: "পোলাপান", amount: 1500, note: "" },  
         { date: "02/01/2026", name: "হুজুর", amount: 2000, note: "" },
         { date: "02/01/2026", name: "লাকরি ", amount: 350, note: "" },      
-        { date: "02/01/2026", name: "ইত্যাদি কস্ট ", amount: 994, note: "" }     
+        { date: "02/01/2026", name: "ইত্যাদি কস্ট ", amount: 994, note: "" },        
     ];
 
     let currentTab = 'income'; // 'income' or 'expense'
@@ -257,6 +249,9 @@
     function setTab(tab) {
         currentTab = tab;
         
+        // Reset search on tab change
+        searchInput.value = "";
+        
         // Update styling
         if (tab === 'income') {
             tabIncome.className = "flex-1 lg:flex-none px-6 py-2 rounded-full font-semibold transition bg-green-600 text-white shadow-md";
@@ -266,7 +261,7 @@
             tabExpense.className = "flex-1 lg:flex-none px-6 py-2 rounded-full font-semibold transition bg-red-600 text-white shadow-md";
         }
 
-        renderTable(searchInput.value);
+        renderTable("");
     }
 
     function renderTable(filter = "") {
@@ -345,5 +340,4 @@
 
 </script>
 </body>
-
 </html>
